@@ -2,6 +2,11 @@
 
 import argparse
 import math
+import os
+import sys
+
+# Allow imports when executed from the ``maincode`` directory.
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from deepair.datasets.antibody_antigen import (
     load_antibody_antigen_dataset,
